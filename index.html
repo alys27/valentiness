@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valnetine's Day🩷</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div id="intro-overlay">
+        <div class="intro-box">
+            <div class="notification-icon">💌</div>
+            <h1>You have a Valentine's Day message, Eljan bey</h1>
+            <p>You may encounter some challenges, but the most difficult ones are waiting for u after 2030!😝</p>
+            <p style="font-size: 0.9rem; margin-top: 5px;">Answer all questions correctly to reveal the secret message and to get your gift! </p>
+            
+            <button class="start-btn" onclick="startGame()">Wanna Play?</button>
+        </div>
+    </div>
+
+    <div class="main-container" id="game-phase">
+        <header class="password-header">
+            <h1 class="title">Answer Questions to Reveal the Secret Message</h1>
+            <h6 class="subtitle"><i>Good luck! You may need)</i></h6>
+            
+            <div class="password-display">
+                <div class="word-group" id="word-1"></div>
+                <div class="spacer"></div>
+                <div class="word-group" id="word-2"></div>
+            </div>
+            
+            <p class="subtitle">Have to merge the letters by putting them in the correct number box.</p>
+        </header>
+
+        <div class="quiz-layout">
+            <div class="col" id="left-column"></div>
+            <div class="col" id="right-column"></div>
+        </div>
+    </div>
+
+    <div class="letter-container" id="letter-phase">
+        <div class="envelope-wrapper" id="envelope" onclick="openEnvelope()">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                
+                <div class="letter-paper" onclick="readPaper(event)">
+                    <div class="paper-content">
+                        <h2>Waow beyefendi!</h2>
+                        <p>
+                            If you are reading this, it means you have successfully completed the quiz and unlocked the secret message! 🎉
+                            <br><br>
+                            rare scenario for a pisces🐠(escpecially for sakalli ones)
+                            <br><br>
+                            Anyway Congratulations, Elcan bey! (Ingcem de bir yere kadar) neyyyyyyyyyyyyyyyyse Yaxsi ki varsan🩷 To the endless years with you!
+                            <br><br>
+                            <b>Sizi c∞x seviremm🩷</b>
+                            <br>
+                            <span class="close-hint">Byeee! (Hope sevdiniz😌)</span>
+                        </p>
+                    </div>
+                </div>
+
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.47 (1).jpeg" class="photo p1">
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.47 (2).jpeg" class="photo p2">
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.47 (3).jpeg" class="photo p3">
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.47.jpeg" class="photo p4">
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.50.jpeg" class="photo p5">
+                <img src="/WhatsApp Image 2026-02-13 at 13.11.52.jpeg" class="photo p6">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
